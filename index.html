@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="main.css" />
   <script src="https://kit.fontawesome.com/c11daa0b0f.js" crossorigin="anonymous"></script>
   <script src="./bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+
 </head>
 
 <body>
@@ -53,86 +57,39 @@
     </div>
   </nav>
 
-  <div id="carouselExampleControls" class="carousel slide bg-secondary" data-bs-ride=" carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class='col d-flex'>
-            <div class="d-flex align-items-center justify-content-center">
-              <div class="column">
-                <h1>Nowoczesna aranżacja Twojego ogrodu </h1>
-                <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
-                  zakres
-                  usług z indywidualnym podejściem do każdego projektu.</p>
-                <div class="row justify-content-between">
-                  <button type="button" class="btn btn-primary">Skontaktuj się z nami</button>
-                  <button type="button" class="btn btn-outline-primary">Zobacz nasze realizacje</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='col bg-primary section-right'>
-            <img src="./assets/hero_01.jpg" class="img" alt="GiardDesign" />
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class='col d-flex'>
-            <div class="d-flex align-items-center justify-content-center">
-              <div class="column">
-                <h1>Nowoczesna aranżacja Twojego ogrodu </h1>
-                <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
-                  zakres
-                  usług z indywidualnym podejściem do każdego projektu.</p>
-                <div class="row justify-content-between">
-                  <button type="button" class="btn btn-primary">Skontaktuj się z nami</button>
-                  <button type="button" class="btn btn-outline-primary">Zobacz nasze realizacje</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='col bg-primary section-right'>
-            <img src="./assets/hero_01.jpg" class="img" alt="GiardDesign" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- <section>
+  <section>
     <div id="hero" class="bg-secondary">
-      <div class="container">
+      <div class="container-fluid-right">
         <div class="row">
-          <div class='col d-flex'>
-            <div class="d-flex align-items-center justify-content-center">
+          <div class="col-lg-6">
+            <div class="h-100 pe-5 d-flex align-items-center justify-content-center">
               <div class="column">
                 <h1>Nowoczesna aranżacja Twojego ogrodu </h1>
-                <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
+                <p class="pb-3 pt-3">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji.
+                  Oferujemy
+                  kompleksowy
                   zakres
                   usług z indywidualnym podejściem do każdego projektu.</p>
-                <div class="row justify-content-between">
+                <div class="row justify-content-between pt-5">
                   <button type="button" class="btn btn-primary">Skontaktuj się z nami</button>
                   <button type="button" class="btn btn-outline-primary">Zobacz nasze realizacje</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class='col bg-primary section-right'>
-            <img src="./assets/hero1.png" class="img" alt="GiardDesign" />
+          <div class="col-lg-6 position-relative">
+            <div class="h-100 ps-5 d-flex justify-content-end">
+              <img src="./assets/hero1.png" class="img" alt="GiardDesign" />
+              <div class="intro-arrows-container">
+                <button class="btn-intro-arrow"><span><i class="fa-solid fa-arrow-left"></i></span></button>
+                <button class="btn-intro-arrow"><span><i class="fa-solid fa-arrow-right"></i></span></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <section>
     <div id="hero" class="bg-light pt-4 pb-4">
@@ -174,13 +131,15 @@
 
   <section>
     <div id="hero" class="bg-primary">
-      <div class="container">
+      <div class="container-fluid-left">
         <div class="row">
-          <div class='col bg-primary'>
-            <img src="./assets/about_firm.png" class="img" alt="GiardDesign" />
+          <div class='col-md-6 bg-primary'>
+            <div class="h-100 pe-5">
+              <img src="./assets/about_firm.png" class="img" alt="GiardDesign" />
+            </div>
           </div>
-          <div class='col d-flex'>
-            <div class="d-flex align-items-center justify-content-center">
+          <div class="col-md-6">
+            <div class="h-100 ps-5 d-flex align-items-center justify-content-center">
               <div class="column p-4">
                 <p class="text-light"><small>O firmie</small></p>
                 <h2 class="text-light">Tworzymy z <em>pasją</em></h2>
@@ -196,6 +155,15 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="hero" class="bg-secondary pt-4 pb-4">
+      <div class="container">
+        <p class="text-primary"><small>Realizacja</small></p>
+        <h2>Nasze <em>projekty</em></h2>
       </div>
     </div>
   </section>
